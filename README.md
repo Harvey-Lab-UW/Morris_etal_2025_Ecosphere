@@ -10,7 +10,7 @@ This information is licensed under a [Creative Commons Attribution 4.0 Internati
 
 For reproducibility, the following data files are made available: 
 
-##### file 1
+#### file 1
 
 This file contains ... description. The following columns are included:
 
@@ -19,7 +19,7 @@ This file contains ... description. The following columns are included:
 - **col3**: description
 
 
-##### file 2
+#### file 2
 
 This file contains ... description. The following columns are included:
 
