@@ -13,3 +13,6 @@
 
 # R environment variables
 .Renviron
+
+# html readme
+README.html
