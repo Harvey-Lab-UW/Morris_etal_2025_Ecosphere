@@ -120,7 +120,7 @@ This file contains stand-level post-fire aboveground biomass carbon components f
 
 #### surface_fuels.csv
 
-This file contains stand-level post-fire surface fuel profiles for each sampled plot. These data include down woody debris (height < 2 m), live understory vegetation, and live small saplings and seedlings (height < _ m). The following columns are included:
+This file contains stand-level post-fire surface fuel profiles for each sampled plot. These data include down woody debris (height < 2 m), live understory vegetation, and live small saplings and seedlings (height < 1.37 m). The following columns are included:
 
 - **col1**: description
 - **col2**: description
@@ -148,7 +148,7 @@ This file contains stand-level post-fire surface fuel profiles for each sampled 
 
 #### canopy_fuels.csv
 
-This file contains stand-level post-fire canopy fuel profiles for each sampled plot. These data include all live and dead canopy trees (height _ m). The following columns are included:
+This file contains stand-level post-fire canopy fuel profiles for each sampled plot. These data include all live and dead canopy trees (height ≥ 1.37 m). The following columns are included:
 
 - **col1**: description
 - **col2**: description
