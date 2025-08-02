@@ -23,26 +23,26 @@ This file contains metadata associated with each sampled plot (*N* = 95). The fo
 
 - **plot_id**: unique plot identifier in the format *site_#*
 - **site**: site code indicating sampled fire
-  - bigh = Big Hollow
-  - eagl = Eagle Creek
-  - lion = Lionshead
-  - nor = Norse Peak
-  - rivr = Riverside
+  - *bigh* = Big Hollow
+  - *eagl* = Eagle Creek
+  - *lion* = Lionshead
+  - *nor* = Norse Peak
+  - *rivr* = Riverside
 - **fire_year**: calendar year of fire occurrence (YYYY)
 - **sample_date**: calendar date of field data collection (YYYYMMDD)
-- **easting_m**: easting coordinate of plot center, measured using a handheld Garmin GPS unit (m); projection = UTM NAD83 Zone 10N *** SHOULD WE SHARE THESE COORDINATES?
-- **northing_m**: northing coordinate of plot center, measured using a handheld Garmin GPS unit (m); projection = UTM NAD83 Zone 10N *** SHOULD WE SHARE THESE COORDINATES?
+- **easting_m**: easting coordinate of plot center, measured using a handheld Garmin GPS unit (m; projection = UTM NAD83 Zone 10N) *** SHOULD WE SHARE THESE COORDINATES?
+- **northing_m**: northing coordinate of plot center, measured using a handheld Garmin GPS unit (m; projection = UTM NAD83 Zone 10N) *** SHOULD WE SHARE THESE COORDINATES?
 - **slope_deg**: topographic slope at plot center, measured using a TruPulse 200 laser rangefinder (degrees)
 - **aspect_deg**: topographic aspect at plot center, measured using a compass (degrees)
 - **elevation_m**: elevation at plot center, measured using a handheld Garmin GPS unit (m)
 - **stand_age**: categorical pre-fire stand age class, based on developmental stage as a function of community structure attributes described by [Van Pelt (2007)](https://dnr.wa.gov/sites/default/files/2025-03/lm_hcp_west_oldgrowth_guide_full_lowres.pdf)
-  - young = ~30-50 years, established after clearcut harvest in late 1900s (Van Pelt stage = canopy closure)
-  - mid-seral = ~70-150 years, originated from fire or clearcut harvest after Euro-American settlement (Van Pelt stages = biomass accumulation / competitive exclusion, maturation I)
-  - late-seral = ~160-500+ years, originated from fire prior to Euro-American settlement (Van Pelt stages = maturation II, vertical diversification, horizontal diversification)
+  - *young* = ~30-50 years, established after clearcut harvest in late 1900s (Van Pelt stage = canopy closure)
+  - *mid-seral* = ~70-150 years, originated from fire or clearcut harvest after Euro-American settlement (Van Pelt stages = biomass accumulation / competitive exclusion, maturation I)
+  - *late-seral* = ~160-500+ years, originated from fire prior to Euro-American settlement (Van Pelt stages = maturation II, vertical diversification, horizontal diversification)
 - **burn_sev**: categorical burn severity class, based on percent of overstory basal area killed by fire
-  - unburned = 0% mortality, no signs of recent fire
-  - low = <30% mortality
-  - high = ≥90% mortality, stand-replacing
+  - *unburned* = 0% mortality, no signs of recent fire
+  - *low* = <30% mortality
+  - *high* = ≥90% mortality, stand-replacing
 - **tape_length_m**: length of cardinal transect tapes, defining total plot radius and coarse woody debris transects (m)
 - **tree_radius_m**: radius of tree subplots, located along each cardinal transect (m)
 - **sapl_radius**: radius of sapling subplots, located along each cardinal transect (m)
@@ -50,13 +50,13 @@ This file contains metadata associated with each sampled plot (*N* = 95). The fo
 - **e_slope_deg**: topographic slope of east transect tape, measured from plot center (degrees)
 - **s_slope_deg**: topographic slope of south transect tape, measured from plot center (degrees)
 - **w_slope_deg**: topographic slope of west transect tape, measured from plot center (degrees)
-- **lrgt_mult_ha**: plot-level multiplier for scaling up measurements of large trees (dbh ≥ 100 cm) to per-hectare values (ha^-1^) *** DO WE WANT TO SHARE THESE PER-HA MULTIPLIERS? AND/OR THE SAMPLING RADII FOR TREES & SAPS?
-- **tree_mult_ha**: plot-level multiplier for scaling up measurements of trees (10 ≤ dbh < 100 cm) to per-hectare values (ha^-1^)
-- **sapl_mult_ha**: plot-level multiplier for scaling up measurements of saplings (height ≥ 0.3 m, dbh < 10 cm) to per-hectare values (ha^-1^)
-- **est_seed_mult_ha**: plot-level multiplier for scaling up measurements of established seedlings (0.1 ≤ height < 0.3 m) to per-hectare values (ha^-1^)
-- **sml_seed_mult_ha**: plot-level multiplier for scaling up measurements of small seedlings (height < 0.1 m) to per-hectare values (ha^-1^) 
-- **shrub_mult_ha**: plot-level multiplier for scaling up measurements of woody shrubs to per-hectare values (ha^-1^)
-- **herb_mult_ha**: plot-level multiplier for scaling up measurements of herbaceous vegetation to per-hectare values (ha^-1^)
+- **lrgt_mult_ha**: plot-level multiplier for scaling up measurements of large trees (dbh ≥ 100 cm) to per-hectare values  *** DO WE WANT TO SHARE THESE PER-HA MULTIPLIERS? AND/OR THE SAMPLING RADII FOR TREES & SAPS?
+- **tree_mult_ha**: plot-level multiplier for scaling up measurements of trees (10 ≤ dbh < 100 cm) to per-hectare values 
+- **sapl_mult_ha**: plot-level multiplier for scaling up measurements of saplings (height ≥ 0.3 m, dbh < 10 cm) to per-hectare values 
+- **est_seed_mult_ha**: plot-level multiplier for scaling up measurements of established seedlings (0.1 ≤ height < 0.3 m) to per-hectare values 
+- **sml_seed_mult_ha**: plot-level multiplier for scaling up measurements of small seedlings (height < 0.1 m) to per-hectare values  
+- **shrub_mult_ha**: plot-level multiplier for scaling up measurements of woody shrubs to per-hectare values 
+- **herb_mult_ha**: plot-level multiplier for scaling up measurements of herbaceous vegetation to per-hectare values 
 
 
 #### stand_structure.csv
