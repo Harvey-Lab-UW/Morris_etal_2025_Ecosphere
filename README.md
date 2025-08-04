@@ -85,27 +85,27 @@ This file contains stand-level post-fire species composition for each sampled pl
 
 - **plot_id**: unique plot identifier in the format *site_plot#*
 - **species**: four-letter tree species code
-  - abam: *Abies amabilis* (Douglas ex Loudon) Douglas ex Forbes
-  - abgr: *Abies grandis* (Douglas ex D. Don) Lindl.
-  - abla: *Abies lasiocarpa* (Hook.) Nutt.
-  - abpr: *Abies procera* Rehder
-  - acgl: *Acer glabrum* Torr.
-  - acma: *Acer macrophyllum* Pursh
-  - alru: *Alnus rubra* Bong.
-  - cano: *Callitropsis nootkatensis* (D. Don) Oerst. ex D.P. Little
-  - chch: *Chrysolepis chrysophylla* (Douglas ex Hook.) Hjelmqvist
-  - conu: *Cornus nuttallii* Audubon ex Torr. & A. Gray
-  - laoc: *Larix occidentalis* Nutt.
-  - pico: *Pinus contorta* Douglas ex Loudon var. *latifolia* Engelm. ex S. Watson
-  - pien: *Picea engelmannii* Parry ex Engelm.
-  - pimo: *Pinus monticola* Douglas ex D. Don
-  - poba: *Populus balsamifera* L. ssp. *trichocarpa* (Torr. & A. Gray ex Hook.) Brayshaw
-  - prem: *Prunus emarginata* (Douglas ex Hook.) D. Dietr.
-  - psme: *Pseudotsuga menziesii* (Mirb.) Franco
-  - tabr: *Taxus brevifolia* Nutt.
-  - thpl: *Thuja plicata* Donn ex D. Don
-  - tshe: *Tsuga heterophylla* (Raf.) Sarg.
-  - tsme: *Tsuga mertensiana* (Bong.) Carrière
+  - abam = *Abies amabilis* (Douglas ex Loudon) Douglas ex Forbes
+  - abgr = *Abies grandis* (Douglas ex D. Don) Lindl.
+  - abla = *Abies lasiocarpa* (Hook.) Nutt.
+  - abpr = *Abies procera* Rehder
+  - acgl = *Acer glabrum* Torr.
+  - acma = *Acer macrophyllum* Pursh
+  - alru = *Alnus rubra* Bong.
+  - cano = *Callitropsis nootkatensis* (D. Don) Oerst. ex D.P. Little
+  - chch = *Chrysolepis chrysophylla* (Douglas ex Hook.) Hjelmqvist
+  - conu = *Cornus nuttallii* Audubon ex Torr. & A. Gray
+  - laoc = *Larix occidentalis* Nutt.
+  - pico = *Pinus contorta* Douglas ex Loudon var. *latifolia* Engelm. ex S. Watson
+  - pien = *Picea engelmannii* Parry ex Engelm.
+  - pimo = *Pinus monticola* Douglas ex D. Don
+  - poba = *Populus balsamifera* L. ssp. *trichocarpa* (Torr. & A. Gray ex Hook.) Brayshaw
+  - prem = *Prunus emarginata* (Douglas ex Hook.) D. Dietr.
+  - psme = *Pseudotsuga menziesii* (Mirb.) Franco
+  - tabr = *Taxus brevifolia* Nutt.
+  - thpl = *Thuja plicata* Donn ex D. Don
+  - tshe = *Tsuga heterophylla* (Raf.) Sarg.
+  - tsme = *Tsuga mertensiana* (Bong.) Carrière
 - **group**: functional group code describing the shade-tolerance, leaf morphology, and reproductive classification of each tree species
   - *i* = shade-intolerant conifer / gymnosperm
   - *t* = shade-tolerant conifer / gymnosperm
