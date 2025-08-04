@@ -17,7 +17,7 @@ This information is licensed under a [Creative Commons Attribution 4.0 Internati
 
 For reproducibility, the following data files are made available: 
 
-#### plot_info.csv
+### plot_info.csv
 
 This file contains metadata associated with each sampled plot (*N* = 95). The following columns are included:
 
@@ -58,7 +58,7 @@ This file contains metadata associated with each sampled plot (*N* = 95). The fo
 
 
 
-#### stand_structure.csv
+### stand_structure.csv
 
 This file contains stand-level post-fire structure summaries for each sampled plot. The following columns are included:
 
@@ -79,7 +79,7 @@ This file contains stand-level post-fire structure summaries for each sampled pl
 
 
 
-#### species_composition.csv
+### species_composition.csv
 
 This file contains stand-level post-fire species composition for each sampled plot. Composition is summarized for all trees with height ≥ 1.37 m. The following columns are included:
 
@@ -121,7 +121,7 @@ This file contains stand-level post-fire species composition for each sampled pl
 
 
 
-#### biomass_carbon.csv
+### biomass_carbon.csv
 
 This file contains stand-level post-fire aboveground biomass carbon components for each sampled plot. All values are Mg C/ha. The following columns are included:
 
@@ -147,7 +147,7 @@ This file contains stand-level post-fire aboveground biomass carbon components f
 
 
 
-#### surface_fuels.csv
+### surface_fuels.csv
 
 This file contains stand-level post-fire surface fuel profiles for each sampled plot. These data include down woody debris (height < 2 m), live understory vegetation, and live understory trees (height < 1.37 m). The following columns are included:
 
@@ -171,7 +171,7 @@ This file contains stand-level post-fire surface fuel profiles for each sampled 
 
 
 
-#### canopy_fuels.csv
+### canopy_fuels.csv
 
 This file contains stand-level post-fire canopy fuel profiles for each sampled plot. These data include all live and dead canopy trees (height ≥ 1.37 m). The following columns are included:
 
