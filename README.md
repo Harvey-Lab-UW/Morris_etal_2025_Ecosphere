@@ -21,7 +21,7 @@ For reproducibility, the following data files are made available:
 
 This file contains metadata associated with each sampled plot (*N* = 95). The following columns are included:
 
-- **plot_id**: unique plot identifier in the format *site_#*
+- **plot_id**: unique plot identifier in the format *site_plot#*
 - **site**: site code indicating sampled fire
   - *bigh* = Big Hollow
   - *eagl* = Eagle Creek
@@ -30,27 +30,25 @@ This file contains metadata associated with each sampled plot (*N* = 95). The fo
   - *rivr* = Riverside
 - **fire_year**: calendar year of fire occurrence (YYYY)
 - **sample_date**: calendar date of field data collection (YYYYMMDD)
-- **easting_m**: easting coordinate of plot center, measured using a handheld Garmin GPS unit (m; projection = UTM NAD83 Zone 10N) *** SHOULD WE SHARE THESE COORDINATES?
-- **northing_m**: northing coordinate of plot center, measured using a handheld Garmin GPS unit (m; projection = UTM NAD83 Zone 10N) *** SHOULD WE SHARE THESE COORDINATES?
-- **slope_deg**: topographic slope at plot center, measured using a TruPulse 200 laser rangefinder (degrees)
-- **aspect_deg**: topographic aspect at plot center, measured using a compass (degrees)
-- **elevation_m**: elevation at plot center, measured using a handheld Garmin GPS unit (m)
+- **slope_deg**: topographic slope at plot center (degrees), measured using a TruPulse 200 laser rangefinder
+- **aspect_deg**: topographic aspect at plot center (degrees), measured using a compass
+- **elevation_m**: elevation at plot center (m), measured using a handheld Garmin GPS unit
 - **stand_age**: categorical pre-fire stand age class, based on developmental stage as a function of community structure attributes described by [Van Pelt (2007)](https://dnr.wa.gov/sites/default/files/2025-03/lm_hcp_west_oldgrowth_guide_full_lowres.pdf)
-  - *young* = ~30-50 years, established after clearcut harvest in late 1900s (Van Pelt stage = canopy closure)
-  - *mid-seral* = ~70-150 years, originated from fire or clearcut harvest after Euro-American settlement (Van Pelt stages = biomass accumulation / competitive exclusion, maturation I)
-  - *late-seral* = ~160-500+ years, originated from fire prior to Euro-American settlement (Van Pelt stages = maturation II, vertical diversification, horizontal diversification)
+  - *young* = ~30–50 years, established after clearcut harvest in late 1900s (Van Pelt stage = canopy closure)
+  - *mid-seral* = ~70–150 years, originated from fire or clearcut harvest after Euro-American settlement (Van Pelt stages = biomass accumulation / competitive exclusion, maturation I)
+  - *late-seral* = ~160–500+ years, originated from fire prior to Euro-American settlement (Van Pelt stages = maturation II, vertical diversification, horizontal diversification)
 - **burn_sev**: categorical burn severity class, based on percent of overstory basal area killed by fire
   - *unburned* = 0% mortality, no signs of recent fire
   - *low* = <30% mortality
   - *high* = ≥90% mortality, stand-replacing
-- **tape_length_m**: length of cardinal transect tapes, defining total plot radius and coarse woody debris transects (m)
-- **tree_radius_m**: radius of tree subplots, located along each cardinal transect (m)
-- **sapl_radius**: radius of sapling subplots, located along each cardinal transect (m)
-- **n_slope_deg**: topographic slope of north transect tape, measured from plot center (degrees)
-- **e_slope_deg**: topographic slope of east transect tape, measured from plot center (degrees)
-- **s_slope_deg**: topographic slope of south transect tape, measured from plot center (degrees)
-- **w_slope_deg**: topographic slope of west transect tape, measured from plot center (degrees)
-- **lrgt_mult_ha**: plot-level multiplier for scaling up measurements of large trees (dbh ≥ 100 cm) to per-hectare values  *** DO WE WANT TO SHARE THESE PER-HA MULTIPLIERS? AND/OR THE SAMPLING RADII FOR TREES & SAPS?
+- **tape_length_m**: length of cardinal transect tapes (m), defining total plot radius and coarse woody debris transects
+- **tree_radius_m**: radius of tree subplots (m), located along each cardinal transect
+- **sapl_radius**: radius of sapling subplots (m), located along each cardinal transect
+- **n_slope_deg**: topographic slope of north transect tape (degrees), measured from plot center
+- **e_slope_deg**: topographic slope of east transect tape (degrees), measured from plot center
+- **s_slope_deg**: topographic slope of south transect tape (degrees), measured from plot center
+- **w_slope_deg**: topographic slope of west transect tape (degrees), measured from plot center
+- **lrgt_mult_ha**: plot-level multiplier for scaling up measurements of large trees (dbh ≥ 100 cm) to per-hectare values 
 - **tree_mult_ha**: plot-level multiplier for scaling up measurements of trees (10 ≤ dbh < 100 cm) to per-hectare values 
 - **sapl_mult_ha**: plot-level multiplier for scaling up measurements of saplings (height ≥ 0.3 m, dbh < 10 cm) to per-hectare values 
 - **est_seed_mult_ha**: plot-level multiplier for scaling up measurements of established seedlings (0.1 ≤ height < 0.3 m) to per-hectare values 
@@ -59,90 +57,117 @@ This file contains metadata associated with each sampled plot (*N* = 95). The fo
 - **herb_mult_ha**: plot-level multiplier for scaling up measurements of herbaceous vegetation to per-hectare values 
 
 
+
 #### stand_structure.csv
 
-This file contains stand-level ... description. The following columns are included:
+This file contains stand-level post-fire structure summaries for each sampled plot. The following columns are included:
 
-- **col1**: description
-- **col2**: description
-- **col3**: description
-- **basal area total**: description
-- **basal area live**: description
-- **basal area dead**: description
-- **overstory density total**: description
-- **overstory density live**: description
-- **overstory density dead**: description
-- **understory density total**: description
-- **understory density live**: description
-- **understory density dead**: description
-- **live seedling density**: description
-- **qmd total**: description
-- **qmd live**: description
-- **qmd dead**: description
+- **plot_id**: unique plot identifier in the format *site_plot#*
+- **basalarea_m2_ha**: basal area (m<sup>2</sup>/ha), all trees (height ≥ 1.37 m)
+- **basalarea_m2_ha_live**: basal area (m<sup>2</sup>/ha), live trees (height ≥ 1.37 m)
+- **basalarea_m2_ha_dead**: basal area (m<sup>2</sup>/ha), dead trees (height ≥ 1.37 m)
+- **overstory_stems_ha**: stem density (stems/ha), all overstory trees (dbh ≥ 10 cm)
+- **overstory_stems_ha_live**: stem density (stems/ha), live overstory trees (dbh ≥ 10 cm)
+- **overstory_stems_ha_dead**: stem density (stems/ha), dead overstory trees (dbh ≥ 10 cm)
+- **understory_stems_ha**: stem density (stems/ha), all understory trees (dbh < 10 cm, height ≥ 0.3 m)
+- **understory_stems_ha_live**: stem density (stems/ha), live understory trees (dbh < 10 cm, height ≥ 0.3 m)
+- **understory_stems_ha_dead**: stem density (stems/ha), dead understory trees (dbh < 10 cm, height ≥ 0.3 m)
+- **seedling_stems_ha_live**: stem density (stems/ha), live seedlings (height < 0.3 m)
+- **qmd_cm**: quadratic mean diameter (cm), all overstory trees (dbh ≥ 10 cm)
+- **qmd_cm_live**: quadratic mean diameter (cm), live overstory trees (dbh ≥ 10 cm)
+- **qmd_cm_dead**: quadratic mean diameter (cm), dead overstory trees (dbh ≥ 10 cm)
+
 
 
 #### species_composition.csv
 
-This file contains stand-level ... description. The following columns are included:
+This file contains stand-level post-fire species composition for each sampled plot. Composition is summarized for all trees with height ≥ 1.37 m. The following columns are included:
 
-- **col1**: description
-- **col2**: description
-- **col3**: description
+- **plot_id**: unique plot identifier in the format *site_plot#*
+- **species**: four-letter tree species code
+  - abam: *Abies amabilis* (Douglas ex Loudon) Douglas ex Forbes
+  - abgr: *Abies grandis* (Douglas ex D. Don) Lindl.
+  - abla: *Abies lasiocarpa* (Hook.) Nutt.
+  - abpr: *Abies procera* Rehder
+  - acgl: *Acer glabrum* Torr.
+  - acma: *Acer macrophyllum* Pursh
+  - alru: *Alnus rubra* Bong.
+  - cano: *Callitropsis nootkatensis* (D. Don) Oerst. ex D.P. Little
+  - chch: *Chrysolepis chrysophylla* (Douglas ex Hook.) Hjelmqvist
+  - conu: *Cornus nuttallii* Audubon ex Torr. & A. Gray
+  - laoc: *Larix occidentalis* Nutt.
+  - pico: *Pinus contorta* Douglas ex Loudon var. *latifolia* Engelm. ex S. Watson
+  - pien: *Picea engelmannii* Parry ex Engelm.
+  - pimo: *Pinus monticola* Douglas ex D. Don
+  - poba: *Populus balsamifera* L. ssp. *trichocarpa* (Torr. & A. Gray ex Hook.) Brayshaw
+  - prem: *Prunus emarginata* (Douglas ex Hook.) D. Dietr.
+  - psme: *Pseudotsuga menziesii* (Mirb.) Franco
+  - tabr: *Taxus brevifolia* Nutt.
+  - thpl: *Thuja plicata* Donn ex D. Don
+  - tshe: *Tsuga heterophylla* (Raf.) Sarg.
+  - tsme: *Tsuga mertensiana* (Bong.) Carrière
+- **group**: functional group code describing the shade-tolerance, leaf morphology, and reproductive classification of each tree species
+  - *i* = shade-intolerant conifer / gymnosperm
+  - *t* = shade-tolerant conifer / gymnosperm
+  - *b* = broadleaf / angiosperm
+- **live_dbh_min_cm**: minimum dbh (cm), live individuals
+- **dead_dbh_min_cm**: minimum dbh (cm), dead individuals
+- **live_dbh_min_cm**: maximum dbh (cm), live individuals
+- **dead_dbh_min_cm**: maximum dbh (cm), dead individuals
+- **live_basalarea_m2_ha**: basal area (m<sup>2</sup>/ha), live individuals
+- **dead_basalarea_m2_ha**: basal area (m<sup>2</sup>/ha), dead individuals
+- **live_stems_ha**: density (stems/ha), live individuals
+- **dead_stems_ha**: density (stems/ha), dead individuals
+
 
 
 #### biomass_carbon.csv
 
-This file contains stand-level post-fire aboveground biomass carbon components for each sampled plot. The following columns are included:
+This file contains stand-level post-fire aboveground biomass carbon components for each sampled plot. All values are Mg C/ha. The following columns are included:
 
-- **col1**: description
-- **col2**: description
-- **col3**: description
-- **total C**: description
-- **live C**: description
-- **dead C**: description
-- **woody C**: description
-- **non-woody C**: description
-- **charred C**: description
-- **down C (dwd)**: description
-- **tree C total**: description
-- **tree C live**: description
-- **tree C snag**: description
-- **stem wood C total (trees + cwd)**: description
-- **stem wood C live**: description
-- **stem wood C dead**: description
-- **stem bark C total (trees + cwd)**: description
-- **stem bark C live**: description
-- **stem bark C dead**: description
-- **stump C**: description
-- **live understory C**: description
+- **plot_id**: unique plot identifier in the format *site_plot#*
+- **c_total_Mg_ha**: total aboveground biomass; includes all standing trees, stumps, down woody debris, and understory vegetation
+- **c_live_Mg_ha**: live aboveground biomass; includes all standing live trees and understory vegetation
+- **c_dead_Mg_ha**: dead aboveground biomass; includes all standing dead trees, stumps, and down woody debris
+- **c_woody_Mg_ha**: woody biomass; includes branches and stems of standing trees, stumps, down woody debris, and woody shrubs
+- **c_nonwoody_Mg_ha**: non-woody biomass; includes tree foliage and total mass of herbaceous understory vegetation
+- **c_standing_Mg_ha**: total standing tree biomass; includes foliage, branches, and stems of all trees
+- **c_standing_Mg_ha_live**: standing live tree biomass; includes foliage, branches, and stems of live trees
+- **c_standing_Mg_ha_dead**: standing dead tree biomass; includes foliage, branches, and stems of dead trees
+- **c_stump_Mg_ha**: total stump biomass; includes stem wood and bark of trees with broken top and height < 1.37 m
+- **c_stemwood_Mg_ha**: total stem wood biomass; includes all standing trees (height ≥ 1.37 m) and coarse woody debris (1000-h particles, diameter ≥ 7.6 cm)
+- **c_stemwood_Mg_ha_live**: live stem wood biomass; includes standing live trees (height ≥ 1.37 m)
+- **c_stemwood_Mg_ha_dead**: dead stem wood biomass; includes standing dead trees (height ≥ 1.37 m) and coarse woody debris (1000-h particles, diameter ≥ 7.6 cm)
+- **c_stembark_Mg_ha**: total stem bark biomass; includes all standing trees (height ≥ 1.37 m) and coarse woody debris (1000-h particles, diameter ≥ 7.6 cm)
+- **c_stembark_Mg_ha_live**: live stem bark biomass; includes standing live trees (height ≥ 1.37 m)
+- **c_stembark_Mg_ha_dead**: dead stem bark biomass; includes standing dead trees (height ≥ 1.37 m) and coarse woody debris (1000-h particles, diameter ≥ 7.6 cm)
+- **c_dwd_Mg_ha**: down woody debris biomass; includes stem wood and bark of all fine (1-, 10-, 100-h particles, diameter < 7.6 cm) and coarse (1000-h particles, diameter ≥ 7.6 cm) fuel components
+- **c_understory_Mg_ha**: live understory biomass; includes foliage, branches, and stems of woody shrubs, herbaceous vegetation, and tree seedlings and small saplings (height < 1.37 m)
+- **c_charred_Mg_ha**: charred wood biomass; includes black carbon in charred stem wood on standing trees (height ≥ 1.37 m) and coarse woody debris (1000-h particles, diameter ≥ 7.6 cm)
 
 
 
 #### surface_fuels.csv
 
-This file contains stand-level post-fire surface fuel profiles for each sampled plot. These data include down woody debris (height < 2 m), live understory vegetation, and live small saplings and seedlings (height < 1.37 m). The following columns are included:
+This file contains stand-level post-fire surface fuel profiles for each sampled plot. These data include down woody debris (height < 2 m), live understory vegetation, and live understory trees (height < 1.37 m). The following columns are included:
 
-- **col1**: description
-- **col2**: description
-- **col3**: description
-- **fwd**: description
-- **1h**: description
-- **10h**: description
-- **100h**: description
-- **cwd**: description
-- **sound**: description
-- **rotten**: description
-- **dwd**: description
-- **deadfueldepth**: description
-- **duff**: description
-- **litter**: description
-- **livesurface_total**: description
-- **shrubs**: description
-- **livesurface_woody**: description; includes woody shrubs, tree saplings / seedlings
-- **livesurface_herbaceous**: description
-- **live_regen**: description
-- **conifer_regen**: description
-- **broadleaf_regen**: description
+- **plot_id**: unique plot identifier in the format *site_plot#*
+- **dwd_Mg_ha**: total down woody debris biomass (Mg/ha); includes fine (diameter < 7.6 cm) and coarse (diameter ≥ 7.6 cm) fuels
+- **fwd_Mg_ha**: total fine woody debris biomass (Mg/ha); includes 1-h (diameter < 0.6 cm), 10-h (0.6 ≤ diameter < 2.5 cm), and 100-h (2.5 ≤ diameter < 7.6 cm) particles
+- **one_hour_Mg_ha**: biomass of 1-h fuel particles (diameter < 0.6 cm; Mg/ha)
+- **ten_hour_Mg_ha**: biomass of 10-h fuel particles (0.6 ≤ diameter < 2.5 cm; Mg/ha)
+- **hundred_hour_Mg_ha**: biomass of 100-h fuel particles (2.5 ≤ diameter < 7.6 cm; Mg/ha)
+- **cwd_Mg_ha**: total coarse woody debris biomass (Mg/ha); includes all 1000-h particles (diameter ≥ 7.6 cm)
+- **cwd_Mg_ha_sound**: sound coarse woody debris biomass (Mg/ha); includes 1000-h particles (diameter ≥ 7.6 cm) with decay class 1–3)
+- **cwd_Mg_ha_rotten**: rotten coarse woody debris biomass (Mg/ha); includes 1000-h particles (diameter ≥ 7.6 cm) with decay class 4–5)
+- **deadfuel_depth_cm**: mean depth of dead fuel (cm); includes dead woody and non-woody plant material (height < 2 m)
+- **duff_depth_cm**: mean depth of duff (cm)
+- **litter_depth_cm**: mean depth of litter (cm)
+- **live_surface_Mg_ha**: live surface fuel biomass (Mg/ha); includes total aboveground biomass of live understory trees (height < 1.37 m), woody shrubs, and herbaceous understory vegetation
+- **herbs_Mg_ha**: live herbaceous vegetation biomass (Mg/ha); includes total aboveground biomass of herbaceous understory species (i.e., non-woody forbs, graminoids, non-vascular plants)
+- **shrubs_Mg_ha**: live woody shrub biomass (Mg/ha); includes total aboveground biomass of shrub species
+- **conifer_seedlings_Mg_ha**: live understory conifer tree biomass (Mg/ha); includes total aboveground biomass of conifer species with height < 1.37 m
+- **broadleaf_seedlings_Mg_ha**: live understory broadleaf tree seedling biomass (Mg/ha); includes total aboveground biomass of broadleaf species with height < 1.37 m
 
 
 
@@ -150,31 +175,28 @@ This file contains stand-level post-fire surface fuel profiles for each sampled 
 
 This file contains stand-level post-fire canopy fuel profiles for each sampled plot. These data include all live and dead canopy trees (height ≥ 1.37 m). The following columns are included:
 
-- **col1**: description
-- **col2**: description
-- **col3**: description
-- **foliage_total**: description
-- **foliage_live**: description
-- **foliage_dead**: description
-- **branch_total**: description
-- **branch_live**: description
-- **branch_dead**: description
-- **branch_1h_total**: description
-- **branch_1h_live**: description
-- **branch_1h_dead**: description
-- **branch_10h_total**: description
-- **branch_10h_live**: description
-- **branch_10h_dead**: description
-- **branch_100h_total**: description
-- **branch_100h_live**: description
-- **branch_100h_dead**: description
-- **branch_1000h_live**: description
-- **crown_total**: description
-- **crown_live**: description
-- **crown_dead**: description
-- **acfl_total**: description
-- **acfl_live**: description
-- **acfl_dead**: description
-- **cbd**: description
-- **cbh**: description
-
+- **plot_id**: unique plot identifier in the format *site_plot#*
+- **foliage_Mg_ha**: total foliage biomass (Mg/ha); includes live and dead foliage on all individuals
+- **foliage_Mg_ha_live**: live foliage biomass (Mg/ha); includes live foliage on live individuals
+- **foliage_Mg_ha_dead**: dead foliage biomass (Mg/ha); includes dead foliage on live and dead individuals
+- **branches_Mg_ha**: total branch biomass (Mg/ha); includes all live and dead branches on all individuals
+- **branches_Mg_ha_live**: live branch biomass (Mg/ha); includes all live branches on live individuals
+- **branches_Mg_ha_dead**: dead branch biomass (Mg/ha); includes all dead branches on live and dead individuals
+- **branch_1h_Mg_ha**: total 1-h branch biomass (Mg/ha); includes all branches with diameter < 0.6 cm on all individuals
+- **branch_1h_Mg_ha_live**: live 1-h branch biomass (Mg/ha); includes live branches with diameter < 0.6 cm on live individuals
+- **branch_1h_Mg_ha_dead**: dead 1-h branch biomass (Mg/ha); includes dead branches with diameter < 0.6 cm on live and dead individuals
+- **branch_10h_Mg_ha**: total 10-h branch biomass (Mg/ha); includes all branches with diameter 0.6–2.5 cm on all individuals
+- **branch_10h_Mg_ha_live**: live 10-h branch biomass (Mg/ha); includes live branches with diameter 0.6–2.5 cm on live individuals
+- **branch_10h_Mg_ha_dead**: dead 10-h branch biomass (Mg/ha); includes dead branches with diameter 0.6–2.5 cm on live and dead individuals
+- **branch_100h_Mg_ha**: total 100-h branch biomass (Mg/ha); includes all branches with diameter 2.5–7.6 cm on all individuals
+- **branch_100h_Mg_ha_live**: live 100-h branch biomass (Mg/ha); includes live branches with diameter 2.5–7.6 cm on live individuals
+- **branch_100h_Mg_ha_dead**: dead 100-h branch biomass (Mg/ha); includes dead branches with diameter 2.5–7.6 cm on live and dead individuals
+- **branch_1000h_live**: live 1000-h branch biomass (Mg/ha); includes live branches with diameter ≥ 7.6 cm on live individuals
+- **crown_Mg_ha**: total crown biomass (Mg/ha); includes foliage and branches on all individuals
+- **crown_Mg_ha_live**: live crown biomass (Mg/ha); includes live foliage and branches on live individuals
+- **crown_Mg_ha_dead**: dead crown biomass (Mg/ha); includes dead foliage and branches on live and dead individuals
+- **acfl_Mg_ha**: total available canopy fuel load (Mg/ha), defined as the sum of total foliage, dead 1-h branches, and half of live 1-h branches ([Reinhardt et al. 2006](https://doi.org/10.1139/x06-157)); includes all live and dead individuals
+- **acfl_Mg_ha_live**: live available canopy fuel load (Mg/ha), defined as the sum of live foliage and half of live 1-h branches; includes live individuals
+- **acfl_Mg_ha_dead**: dead available canopy fuel load (Mg/ha), defined as the sum of dead foliage and dead 1-h branches; includes live and dead individuals
+- **cbd_kg_m3**: canopy bulk density (kg/m<sup>3</sup>), defined as the maximum 3-m running mean of the vertical canopy fuel profile ([Reinhardt et al. 2006](https://doi.org/10.1139/x06-157))
+- **cbh_m**: canopy base height (m), defined as the lowest height at which canopy bulk density exceeded 0.04 kg/m<sup>3</sup> ([Cruz et al. 2004](https://doi.org/10.1093/forestscience/50.5.640), [Donato et al. 2013](https://doi.org/10.1890/12-0772.1), [Sando and Wick 1972](https://research.fs.usda.gov/treesearch/10605))
