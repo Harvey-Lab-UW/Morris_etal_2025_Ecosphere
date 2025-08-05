@@ -48,13 +48,13 @@ This file contains metadata associated with each sampled plot (*N* = 95). The fo
 - **e_slope_deg**: topographic slope of east transect tape (degrees), measured from plot center
 - **s_slope_deg**: topographic slope of south transect tape (degrees), measured from plot center
 - **w_slope_deg**: topographic slope of west transect tape (degrees), measured from plot center
-- **lrgt_mult_ha**: plot-level multiplier for scaling up measurements of large trees (dbh ≥ 100 cm) to per-hectare values 
-- **tree_mult_ha**: plot-level multiplier for scaling up measurements of trees (10 ≤ dbh < 100 cm) to per-hectare values 
-- **sapl_mult_ha**: plot-level multiplier for scaling up measurements of saplings (height ≥ 0.3 m, dbh < 10 cm) to per-hectare values 
-- **est_seed_mult_ha**: plot-level multiplier for scaling up measurements of established seedlings (0.1 ≤ height < 0.3 m) to per-hectare values 
-- **sml_seed_mult_ha**: plot-level multiplier for scaling up measurements of small seedlings (height < 0.1 m) to per-hectare values  
-- **shrub_mult_ha**: plot-level multiplier for scaling up measurements of woody shrubs to per-hectare values 
-- **herb_mult_ha**: plot-level multiplier for scaling up measurements of herbaceous vegetation to per-hectare values 
+- **lrgt_mult_ha**: plot-level multiplier for scaling up sampled large trees (dbh ≥ 100 cm) to per-hectare values 
+- **tree_mult_ha**: plot-level multiplier for scaling up sampled trees (10 ≤ dbh < 100 cm) to per-hectare values 
+- **sapl_mult_ha**: plot-level multiplier for scaling up sampled saplings (height ≥ 0.3 m, dbh < 10 cm) to per-hectare values 
+- **est_seed_mult_ha**: plot-level multiplier for scaling up sampled established seedlings (0.1 ≤ height < 0.3 m) to per-hectare values 
+- **sml_seed_mult_ha**: plot-level multiplier for scaling up sampled small seedlings (height < 0.1 m) to per-hectare values  
+- **shrub_mult_ha**: plot-level multiplier for scaling up sampled woody shrubs to per-hectare values 
+- **herb_mult_ha**: plot-level multiplier for scaling up sampled herbaceous vegetation to per-hectare values 
 
 
 
@@ -85,27 +85,27 @@ This file contains stand-level post-fire species composition for each sampled pl
 
 - **plot_id**: unique plot identifier in the format *site_plot#*
 - **species**: four-letter tree species code
-  - abam = *Abies amabilis* (Douglas ex Loudon) Douglas ex Forbes
-  - abgr = *Abies grandis* (Douglas ex D. Don) Lindl.
-  - abla = *Abies lasiocarpa* (Hook.) Nutt.
-  - abpr = *Abies procera* Rehder
-  - acgl = *Acer glabrum* Torr.
-  - acma = *Acer macrophyllum* Pursh
-  - alru = *Alnus rubra* Bong.
-  - cano = *Callitropsis nootkatensis* (D. Don) Oerst. ex D.P. Little
-  - chch = *Chrysolepis chrysophylla* (Douglas ex Hook.) Hjelmqvist
-  - conu = *Cornus nuttallii* Audubon ex Torr. & A. Gray
-  - laoc = *Larix occidentalis* Nutt.
-  - pico = *Pinus contorta* Douglas ex Loudon var. *latifolia* Engelm. ex S. Watson
-  - pien = *Picea engelmannii* Parry ex Engelm.
-  - pimo = *Pinus monticola* Douglas ex D. Don
-  - poba = *Populus balsamifera* L. ssp. *trichocarpa* (Torr. & A. Gray ex Hook.) Brayshaw
-  - prem = *Prunus emarginata* (Douglas ex Hook.) D. Dietr.
-  - psme = *Pseudotsuga menziesii* (Mirb.) Franco
-  - tabr = *Taxus brevifolia* Nutt.
-  - thpl = *Thuja plicata* Donn ex D. Don
-  - tshe = *Tsuga heterophylla* (Raf.) Sarg.
-  - tsme = *Tsuga mertensiana* (Bong.) Carrière
+  - *abam* = *Abies amabilis* (Douglas ex Loudon) Douglas ex Forbes
+  - *abgr* = *Abies grandis* (Douglas ex D. Don) Lindl.
+  - *abla* = *Abies lasiocarpa* (Hook.) Nutt.
+  - *abpr* = *Abies procera* Rehder
+  - *acgl* = *Acer glabrum* Torr.
+  - *acma* = *Acer macrophyllum* Pursh
+  - *alru* = *Alnus rubra* Bong.
+  - *cano* = *Callitropsis nootkatensis* (D. Don) Oerst. ex D.P. Little
+  - *chch* = *Chrysolepis chrysophylla* (Douglas ex Hook.) Hjelmqvist
+  - *conu* = *Cornus nuttallii* Audubon ex Torr. & A. Gray
+  - *laoc* = *Larix occidentalis* Nutt.
+  - *pico* = *Pinus contorta* Douglas ex Loudon var. *latifolia* Engelm. ex S. Watson
+  - *pien* = *Picea engelmannii* Parry ex Engelm.
+  - *pimo* = *Pinus monticola* Douglas ex D. Don
+  - *poba* = *Populus balsamifera* L. ssp. *trichocarpa* (Torr. & A. Gray ex Hook.) Brayshaw
+  - *prem* = *Prunus emarginata* (Douglas ex Hook.) D. Dietr.
+  - *psme* = *Pseudotsuga menziesii* (Mirb.) Franco
+  - *tabr* = *Taxus brevifolia* Nutt.
+  - *thpl* = *Thuja plicata* Donn ex D. Don
+  - *tshe* = *Tsuga heterophylla* (Raf.) Sarg.
+  - *tsme* = *Tsuga mertensiana* (Bong.) Carrière
 - **group**: functional group code describing the shade-tolerance, leaf morphology, and reproductive classification of each tree species
   - *i* = shade-intolerant conifer / gymnosperm
   - *t* = shade-tolerant conifer / gymnosperm
@@ -149,25 +149,25 @@ This file contains stand-level post-fire aboveground biomass carbon components f
 
 ### surface_fuels.csv
 
-This file contains stand-level post-fire surface fuel profiles for each sampled plot. These data include down woody debris (height < 2 m), live understory vegetation, and live understory trees (height < 1.37 m). The following columns are included:
+This file contains stand-level post-fire surface fuel profiles for each sampled plot. These data include aboveground biomass of down woody debris (height < 2 m), live understory vegetation, and live understory trees (height < 1.37 m). The following columns are included:
 
 - **plot_id**: unique plot identifier in the format *site_plot#*
-- **dwd_Mg_ha**: total down woody debris biomass (Mg/ha); includes fine (diameter < 7.6 cm) and coarse (diameter ≥ 7.6 cm) fuels
-- **fwd_Mg_ha**: total fine woody debris biomass (Mg/ha); includes 1-h (diameter < 0.6 cm), 10-h (0.6 ≤ diameter < 2.5 cm), and 100-h (2.5 ≤ diameter < 7.6 cm) particles
-- **one_hour_Mg_ha**: biomass of 1-h fuel particles (diameter < 0.6 cm; Mg/ha)
-- **ten_hour_Mg_ha**: biomass of 10-h fuel particles (0.6 ≤ diameter < 2.5 cm; Mg/ha)
-- **hundred_hour_Mg_ha**: biomass of 100-h fuel particles (2.5 ≤ diameter < 7.6 cm; Mg/ha)
-- **cwd_Mg_ha**: total coarse woody debris biomass (Mg/ha); includes all 1000-h particles (diameter ≥ 7.6 cm)
-- **cwd_Mg_ha_sound**: sound coarse woody debris biomass (Mg/ha); includes 1000-h particles (diameter ≥ 7.6 cm) with decay class 1–3)
-- **cwd_Mg_ha_rotten**: rotten coarse woody debris biomass (Mg/ha); includes 1000-h particles (diameter ≥ 7.6 cm) with decay class 4–5)
+- **dwd_Mg_ha**: total down woody debris fuel load (Mg/ha); includes fine (diameter < 7.6 cm) and coarse (diameter ≥ 7.6 cm) fuels
+- **fwd_Mg_ha**: total fine woody debris fuel load (Mg/ha); includes 1-h (diameter < 0.6 cm), 10-h (0.6 ≤ diameter < 2.5 cm), and 100-h (2.5 ≤ diameter < 7.6 cm) particles
+- **one_hour_Mg_ha**: fuel load of 1-h fuel particles (diameter < 0.6 cm; Mg/ha)
+- **ten_hour_Mg_ha**: fuel load of 10-h fuel particles (0.6 ≤ diameter < 2.5 cm; Mg/ha)
+- **hundred_hour_Mg_ha**: fuel load of 100-h fuel particles (2.5 ≤ diameter < 7.6 cm; Mg/ha)
+- **cwd_Mg_ha**: total coarse woody debris fuel load (Mg/ha); includes all 1000-h particles (diameter ≥ 7.6 cm)
+- **cwd_Mg_ha_sound**: fuel load of sound coarse woody debris (Mg/ha); includes 1000-h particles (diameter ≥ 7.6 cm) with decay class 1–3
+- **cwd_Mg_ha_rotten**: fuel load of rotten coarse woody debris (Mg/ha); includes 1000-h particles (diameter ≥ 7.6 cm) with decay class 4–5
 - **deadfuel_depth_cm**: mean depth of dead fuel (cm); includes dead woody and non-woody plant material (height < 2 m)
 - **duff_depth_cm**: mean depth of duff (cm)
 - **litter_depth_cm**: mean depth of litter (cm)
-- **live_surface_Mg_ha**: live surface fuel biomass (Mg/ha); includes total aboveground biomass of live understory trees (height < 1.37 m), woody shrubs, and herbaceous understory vegetation
-- **herbs_Mg_ha**: live herbaceous vegetation biomass (Mg/ha); includes total aboveground biomass of herbaceous understory species (i.e., non-woody forbs, graminoids, non-vascular plants)
-- **shrubs_Mg_ha**: live woody shrub biomass (Mg/ha); includes total aboveground biomass of shrub species
-- **conifer_seedlings_Mg_ha**: live understory conifer tree biomass (Mg/ha); includes total aboveground biomass of conifer species with height < 1.37 m
-- **broadleaf_seedlings_Mg_ha**: live understory broadleaf tree seedling biomass (Mg/ha); includes total aboveground biomass of broadleaf species with height < 1.37 m
+- **live_surface_Mg_ha**: total live surface fuel load (Mg/ha); includes live understory herbaceous vegetation, woody shrubs, and trees (height < 1.37 m)
+- **herbs_Mg_ha**: fuel load of live herbaceous vegetation (Mg/ha); includes non-woody forb, graminoid, and non-vascular plant species
+- **shrubs_Mg_ha**: fuel load of live woody shrubs (Mg/ha); includes woody shrub and subshrub species
+- **conifer_seedlings_Mg_ha**: fuel load of live understory conifer trees (Mg/ha); includes conifer species (i.e., gymnosperms, Coniferophyta) with height < 1.37 m
+- **broadleaf_seedlings_Mg_ha**: fuel load of live understory broadleaf trees (Mg/ha); includes broadleaf species (i.e., angiosperms, Magnoliophyta) with height < 1.37 m
 
 
 
@@ -176,25 +176,25 @@ This file contains stand-level post-fire surface fuel profiles for each sampled 
 This file contains stand-level post-fire canopy fuel profiles for each sampled plot. These data include all live and dead canopy trees (height ≥ 1.37 m). The following columns are included:
 
 - **plot_id**: unique plot identifier in the format *site_plot#*
-- **foliage_Mg_ha**: total foliage biomass (Mg/ha); includes live and dead foliage on all individuals
-- **foliage_Mg_ha_live**: live foliage biomass (Mg/ha); includes live foliage on live individuals
-- **foliage_Mg_ha_dead**: dead foliage biomass (Mg/ha); includes dead foliage on live and dead individuals
-- **branches_Mg_ha**: total branch biomass (Mg/ha); includes all live and dead branches on all individuals
-- **branches_Mg_ha_live**: live branch biomass (Mg/ha); includes all live branches on live individuals
-- **branches_Mg_ha_dead**: dead branch biomass (Mg/ha); includes all dead branches on live and dead individuals
-- **branch_1h_Mg_ha**: total 1-h branch biomass (Mg/ha); includes all branches with diameter < 0.6 cm on all individuals
-- **branch_1h_Mg_ha_live**: live 1-h branch biomass (Mg/ha); includes live branches with diameter < 0.6 cm on live individuals
-- **branch_1h_Mg_ha_dead**: dead 1-h branch biomass (Mg/ha); includes dead branches with diameter < 0.6 cm on live and dead individuals
-- **branch_10h_Mg_ha**: total 10-h branch biomass (Mg/ha); includes all branches with diameter 0.6–2.5 cm on all individuals
-- **branch_10h_Mg_ha_live**: live 10-h branch biomass (Mg/ha); includes live branches with diameter 0.6–2.5 cm on live individuals
-- **branch_10h_Mg_ha_dead**: dead 10-h branch biomass (Mg/ha); includes dead branches with diameter 0.6–2.5 cm on live and dead individuals
-- **branch_100h_Mg_ha**: total 100-h branch biomass (Mg/ha); includes all branches with diameter 2.5–7.6 cm on all individuals
-- **branch_100h_Mg_ha_live**: live 100-h branch biomass (Mg/ha); includes live branches with diameter 2.5–7.6 cm on live individuals
-- **branch_100h_Mg_ha_dead**: dead 100-h branch biomass (Mg/ha); includes dead branches with diameter 2.5–7.6 cm on live and dead individuals
-- **branch_1000h_live**: live 1000-h branch biomass (Mg/ha); includes live branches with diameter ≥ 7.6 cm on live individuals
-- **crown_Mg_ha**: total crown biomass (Mg/ha); includes foliage and branches on all individuals
-- **crown_Mg_ha_live**: live crown biomass (Mg/ha); includes live foliage and branches on live individuals
-- **crown_Mg_ha_dead**: dead crown biomass (Mg/ha); includes dead foliage and branches on live and dead individuals
+- **foliage_Mg_ha**: total foliage fuel load (Mg/ha); includes live and dead foliage on all individuals
+- **foliage_Mg_ha_live**: live foliage fuel load (Mg/ha); includes live foliage on live individuals
+- **foliage_Mg_ha_dead**: dead foliage fuel load (Mg/ha); includes dead foliage on live and dead individuals
+- **branches_Mg_ha**: total branch fuel load (Mg/ha); includes all live and dead branches on all individuals
+- **branches_Mg_ha_live**: live branch fuel load (Mg/ha); includes all live branches on live individuals
+- **branches_Mg_ha_dead**: dead branch fuel load (Mg/ha); includes all dead branches on live and dead individuals
+- **branch_1h_Mg_ha**: total 1-h branch fuel load (Mg/ha); includes all branches with diameter < 0.6 cm on all individuals
+- **branch_1h_Mg_ha_live**: live 1-h branch fuel load (Mg/ha); includes live branches with diameter < 0.6 cm on live individuals
+- **branch_1h_Mg_ha_dead**: dead 1-h branch fuel load (Mg/ha); includes dead branches with diameter < 0.6 cm on live and dead individuals
+- **branch_10h_Mg_ha**: total 10-h branch fuel load (Mg/ha); includes all branches with diameter 0.6–2.5 cm on all individuals
+- **branch_10h_Mg_ha_live**: live 10-h branch fuel load (Mg/ha); includes live branches with diameter 0.6–2.5 cm on live individuals
+- **branch_10h_Mg_ha_dead**: dead 10-h branch fuel load (Mg/ha); includes dead branches with diameter 0.6–2.5 cm on live and dead individuals
+- **branch_100h_Mg_ha**: total 100-h branch fuel load (Mg/ha); includes all branches with diameter 2.5–7.6 cm on all individuals
+- **branch_100h_Mg_ha_live**: live 100-h branch fuel load (Mg/ha); includes live branches with diameter 2.5–7.6 cm on live individuals
+- **branch_100h_Mg_ha_dead**: dead 100-h branch fuel load (Mg/ha); includes dead branches with diameter 2.5–7.6 cm on live and dead individuals
+- **branch_1000h_live**: live 1000-h branch fuel load (Mg/ha); includes live branches with diameter ≥ 7.6 cm on live individuals
+- **crown_Mg_ha**: total crown fuel load (Mg/ha); includes foliage and branches on all individuals
+- **crown_Mg_ha_live**: live crown fuel load (Mg/ha); includes live foliage and branches on live individuals
+- **crown_Mg_ha_dead**: dead crown fuel load (Mg/ha); includes dead foliage and branches on live and dead individuals
 - **acfl_Mg_ha**: total available canopy fuel load (Mg/ha), defined as the sum of total foliage, dead 1-h branches, and half of live 1-h branches ([Reinhardt et al. 2006](https://doi.org/10.1139/x06-157)); includes all live and dead individuals
 - **acfl_Mg_ha_live**: live available canopy fuel load (Mg/ha), defined as the sum of live foliage and half of live 1-h branches; includes live individuals
 - **acfl_Mg_ha_dead**: dead available canopy fuel load (Mg/ha), defined as the sum of dead foliage and dead 1-h branches; includes live and dead individuals
