@@ -176,7 +176,7 @@ This file contains stand-level post-fire surface fuel profiles for each sampled 
 This file contains stand-level post-fire canopy fuel profiles for each sampled plot. These data include all live and dead canopy trees (height ≥ 1.37 m). The following columns are included:
 
 - **plot_id**: unique plot identifier in the format *site_plot#*
-- **foliage_Mg_ha**: total foliage fuel load (Mg/ha); includes live and dead foliage on all individuals
+- **foliage_Mg_ha**: total foliage fuel load (Mg/ha); includes all foliage on all individuals
 - **foliage_Mg_ha_live**: live foliage fuel load (Mg/ha); includes live foliage on live individuals
 - **foliage_Mg_ha_dead**: dead foliage fuel load (Mg/ha); includes dead foliage on live and dead individuals
 - **branches_Mg_ha**: total branch fuel load (Mg/ha); includes all live and dead branches on all individuals
@@ -192,7 +192,7 @@ This file contains stand-level post-fire canopy fuel profiles for each sampled p
 - **branch_100h_Mg_ha_live**: live 100-h branch fuel load (Mg/ha); includes live branches with diameter 2.5–7.6 cm on live individuals
 - **branch_100h_Mg_ha_dead**: dead 100-h branch fuel load (Mg/ha); includes dead branches with diameter 2.5–7.6 cm on live and dead individuals
 - **branch_1000h_live**: live 1000-h branch fuel load (Mg/ha); includes live branches with diameter ≥ 7.6 cm on live individuals
-- **crown_Mg_ha**: total crown fuel load (Mg/ha); includes foliage and branches on all individuals
+- **crown_Mg_ha**: total crown fuel load (Mg/ha); includes all foliage and branches on all individuals
 - **crown_Mg_ha_live**: live crown fuel load (Mg/ha); includes live foliage and branches on live individuals
 - **crown_Mg_ha_dead**: dead crown fuel load (Mg/ha); includes dead foliage and branches on live and dead individuals
 - **acfl_Mg_ha**: total available canopy fuel load (Mg/ha), defined as the sum of total foliage, dead 1-h branches, and half of live 1-h branches ([Reinhardt et al. 2006](https://doi.org/10.1139/x06-157)); includes all live and dead individuals
