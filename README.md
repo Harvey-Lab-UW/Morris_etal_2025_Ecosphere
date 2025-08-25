@@ -1,5 +1,5 @@
 # Morris_etal_2025_Ecosphere
-Data accompanying the manuscript 'Structural legacies drive variability in post-fire aboveground carbon and fuel profiles in wet temperate forests' by Morris, Laughlin, Rangel-Parra, Donato, Halofsky, Butman, and Harvey published in Ecosphere. 
+Data accompanying the manuscript 'Pre-fire structure drives variability in post-fire aboveground carbon and fuel profiles in wet temperate forests' by Morris, Laughlin, Rangel-Parra, Donato, Halofsky, Butman, and Harvey published in Ecosphere. 
 *See the main text of the manuscript for complete descriptions of data collection and processing.*
 
 [!!placeholder for Zenodo DOI badge]
@@ -19,7 +19,7 @@ For reproducibility, the following data files are made available:
 
 ### plot_info.csv
 
-This file contains metadata associated with each sampled plot (*N* = 95). The following columns are included:
+This file contains metadata associated with each sampled plot (*n* = 95). The following columns are included:
 
 - **plot_id**: unique plot identifier in the format *site_plot#*
 - **site**: site code indicating sampled fire
